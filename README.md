@@ -44,6 +44,20 @@ Paste the recipe for the dependency in the `dependencies` section of your myBuil
         }
 ```
 
+### Cmap
+```json
+        "Cmap": {
+            "version": "0.0.3",
+            "include_paths": [
+                "include"
+            ],
+            "src": [
+                "lib"
+            ],
+            "remote": "https://github.com/mainak55512/Cmap"
+        }
+```
+
 ### yyjson
 ```json
         "yyjson": {
