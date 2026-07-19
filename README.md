@@ -83,16 +83,16 @@ Paste the recipe for the dependency in the `dependencies` section of your myBuil
                 "-DCROW_ENABLE_SSL",
                 "-DCROW_ENABLE_COMPRESSION"
             ],
-            "include_paths": [
-                "include"
-            ],
-            "src": [],
             "lib_links": [
                 "-lpthread",
                 "-lssl",
                 "-lcrypto",
                 "-lz"
             ],
+            "include_paths": [
+                "include"
+            ],
+            "src": [],
             "remote": "https://github.com/CrowCpp/Crow"
         }    
 ```
