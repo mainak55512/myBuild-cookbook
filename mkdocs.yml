@@ -1,0 +1,24 @@
+site_name: MyBuild
+
+theme:
+  name: material
+  features:
+    - navigation.instant
+    - content.code.copy       # Adds a sleek "Copy" button to your JSON blocks
+  palette:
+    # Dark Mode Configuration
+    - scheme: slate
+      primary: black
+      accent: cyan
+
+markdown_extensions:
+  - pymdownx.highlight:
+      anchor_linenums: true
+      line_spans: '__span'
+      pygments_lang_class: true
+  - pymdownx.superfences          # Ensures nested code blocks render perfectly
+  - pymdownx.inlinehilite
+
+nav:
+  - Home: index.md
+  - CookBook: cookbook.md
