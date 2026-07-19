@@ -116,3 +116,36 @@ A http server library for C++ projects.
     "remote": "https://github.com/CrowCpp/Crow"
 }    
 ```
+
+### Raylib (lang: C)
+
+A graphics simulation library.
+
+NOTE: the `flags` may change on the basis of environment. Below recipe is for
+x11 systems.
+
+```json
+"raylib": {
+    "version": "unknown",
+    "flags": [
+        "-std=c99", "-D_GNU_SOURCE", "-DGL_SILENCE_DEPRECATION=199309L",
+        "-DPLATFORM_DESKTOP_GLFW", "-DGRAPHICS_API_OPENGL_33",
+        "-DSUPPORT_MODULE_RSHAPES=1", "-DSUPPORT_MODULE_RTEXTURES=1",
+        "-DSUPPORT_MODULE_RTEXT=1", "-DSUPPORT_MODULE_RMODELS=1",
+        "-DSUPPORT_MODULE_RAUDIO=1", "-D_GLFW_X11"
+    ],
+    "lib_links": [
+        "-lGL", "-lX11", "-lXrandr", "-lXinerama", "-lXi",
+        "-lXcursor", "-lm", "-lpthread", "-ldl", "-lrt"
+    ],
+    "include_paths": [
+        "src",
+        "src/platforms",
+        "src/external/glfw/include"
+    ],
+    "src": [
+        "src"
+    ],
+    "remote": "https://github.com/raysan5/raylib.git"
+}
+```
