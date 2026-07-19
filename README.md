@@ -2,7 +2,7 @@
 
 Paste the recipe for the dependency in the `dependencies` section of your myBuild.json file and run `myBuild sync`.
 
-### Arena
+### Arena (lang: C)
 ```json
         "arena": {
             "version": "0.1.1",
@@ -16,7 +16,7 @@ Paste the recipe for the dependency in the `dependencies` section of your myBuil
         }
 ```
 
-### CString
+### CString (lang: C)
 ```json
         "CString": {
             "version": "0.1.1",
@@ -30,7 +30,7 @@ Paste the recipe for the dependency in the `dependencies` section of your myBuil
         }
 ```
 
-### Container
+### Container (lang: C)
 ```json
         "container": {
             "version": "0.1.1",
@@ -44,7 +44,7 @@ Paste the recipe for the dependency in the `dependencies` section of your myBuil
         }
 ```
 
-### Cmap
+### Cmap (lang: C)
 ```json
         "Cmap": {
             "version": "0.0.3",
@@ -58,7 +58,7 @@ Paste the recipe for the dependency in the `dependencies` section of your myBuil
         }
 ```
 
-### yyjson
+### yyjson (lang: C)
 ```json
         "yyjson": {
             "version": "0.12.0",
@@ -70,4 +70,29 @@ Paste the recipe for the dependency in the `dependencies` section of your myBuil
             ],
             "remote": "https://github.com/ibireme/yyjson"
         }
+```
+
+### Crow (lang: C++)
+```json
+        "Crow": {
+            "version": "1.1.1",
+            "flags": [
+                "-std=c++17",
+                "-O3",
+                "-DASIO_NO_DEPRECATED",
+                "-DCROW_ENABLE_SSL",
+                "-DCROW_ENABLE_COMPRESSION"
+            ],
+            "include_paths": [
+                "include"
+            ],
+            "src": [],
+            "lib_links": [
+                "-lpthread",
+                "-lssl",
+                "-lcrypto",
+                "-lz"
+            ],
+            "remote": "https://github.com/CrowCpp/Crow"
+        }    
 ```
